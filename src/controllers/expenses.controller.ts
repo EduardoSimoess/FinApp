@@ -13,6 +13,6 @@ export default class ExpenseController {
   public async listExpenses(req: Request, res: Response) {
     const { month } = req.params;
     const list = await this.expenseService.listExpenses(Number(month));
-    return res.status(201).json({ data: list, succes: true });
+    return res.status(200).json({ data: list, succes: true });
   }
 }

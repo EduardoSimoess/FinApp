@@ -15,7 +15,7 @@ export default class ExpenseModel {
         tipo_pagamento_id, categoria_id) VALUES (?, ?, ?, ?, ?)`,
       [valorCent, dataDeCompra, descricao, tipoPagamentoId, categoriaId],
     );
-
+    console.log(insertId);      
     return insertId;
   }
 
