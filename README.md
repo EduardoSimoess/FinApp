@@ -30,7 +30,7 @@ Para melhor organização do projeto utilizei a arquitetura MSC. De modo que, a 
 
 Os testes foram implementados usando mocha com auxílio do chai e sinon.
 
-<h2>Funcionalidades<h2>
+<h2>Funcionalidades</h2>
 
 Assim que o banco de dados e as tabelas são criadas já são determinadas as possíveis formas de pagamentos:
 - Crédito;
