@@ -50,6 +50,7 @@ Assim que o banco de dados e as tabelas são criadas já são determinadas as po
 - Pix;
 <br>
 e as categorias nas quais os gastos devem se enquadrar:
+<br>
 - Alimentação;
 - Diversos;
 - Domésticos;
