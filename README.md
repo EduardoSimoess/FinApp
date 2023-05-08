@@ -10,10 +10,13 @@ Obs.: O Front-end ainda está em desenvolvimento.
 
 Para clonar o projeto é só colar a seguinte linha de comando no terminal:
 - git clone git@github.com:EduardoSimoess/blogsAPI.git;
+<br>
 Em seguida é necessário instalar as dependências do projeto localmente:
+<br>
 - npm i;
 <br>
 Também optei por utilizar o docker no design do projeto, por isso para subir os containers é necessário usar o comando:
+<br>
 - docker-compose up -d;
 <br>
 Os comando a seguir devem ser inseridos dentro do terminal do container “modelo”, para abri-lo use o comando:
