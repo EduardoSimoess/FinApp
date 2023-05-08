@@ -10,7 +10,7 @@ Obs.: O Front-end ainda está em desenvolvimento.
 
 Para clonar o projeto é só colar a seguinte linha de comando no terminal:
 <br>
-- git clone git@github.com:EduardoSimoess/blogsAPI.git;
+<p>- git clone git@github.com:EduardoSimoess/blogsAPI.git;</p>
 <br>
 Em seguida é necessário instalar as dependências do projeto localmente:
 <br>
@@ -45,7 +45,7 @@ Os testes foram implementados usando mocha com auxílio do chai e sinon.
 
 Assim que o banco de dados e as tabelas são criadas já são determinadas as possíveis formas de pagamentos:
 <br>
--Crédito;
+- Crédito;
 <br>
 - Débito;
 <br>
