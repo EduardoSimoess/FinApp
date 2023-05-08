@@ -46,15 +46,23 @@ Os testes foram implementados usando mocha com auxílio do chai e sinon.
 Assim que o banco de dados e as tabelas são criadas já são determinadas as possíveis formas de pagamentos:
 <br>
 - Crédito;
+<br>
 - Débito;
+<br>
 - Dinheiro;
+<br>
 - Pix;
 <br>
 e as categorias nas quais os gastos devem se enquadrar:
 <br>
 - Alimentação;
+<br>
 - Diversos;
+<br>
 - Domésticos;
+<br>
 - Lazer;
+<br>
 - Saúde;
+<br>
 As rotas criadas têm a função de adicionar novos gastos, além de dar acesso a todos os gastos feitos durante o mês. 
