@@ -9,7 +9,9 @@ Obs.: O Front-end ainda está em desenvolvimento.
 <h2>Instalação</h2>
 
 Para clonar o projeto é só colar a seguinte linha de comando no terminal:
+<br>
 <span>- git clone git@github.com:EduardoSimoess/blogsAPI.git;</span>
+<br>
 Em seguida é necessário instalar as dependências do projeto localmente:
 <br>
 - npm i;
