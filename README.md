@@ -14,24 +14,25 @@ Para clonar o projeto é só colar a seguinte linha de comando no terminal:
 <br>
 Em seguida é necessário instalar as dependências do projeto localmente:
 <br>
-- npm i;
+<span>- npm i;</span>
 <br>
 Também optei por utilizar o docker no design do projeto, por isso para subir os containers é necessário usar o comando:
 <br>
-- docker-compose up -d;
+<span>- docker-compose up -d;</span>
 <br>
 Os comando a seguir devem ser inseridos dentro do terminal do container “modelo”, para abri-lo use o comando:
 <br>
-- docker exec -it modelo bash;
+<span>- docker exec -it modelo bash;</span>
 <br>
 Para inicializar a aplicação utilize o comando:
 <br>
-- npm start;
+<span>- npm start;</span>
 <br>
 Para utilizar as rotas é necessário o auxílio de alguma extensão como o thunder cliente ou o insomnia.
 Se desejar rodar os testes automatizados basta usar o comando:
 <br>
-- npm test;
+<span>- npm test;</span>
+<br>
 
 <h2>Desenvolvimento</h2>
 
@@ -45,24 +46,24 @@ Os testes foram implementados usando mocha com auxílio do chai e sinon.
 
 Assim que o banco de dados e as tabelas são criadas já são determinadas as possíveis formas de pagamentos:
 <br>
-- Crédito;
+<span>- Crédito;</span>
 <br>
-- Débito;
+<span>- Débito;</span>
 <br>
-- Dinheiro;
+<span>- Dinheiro;</span>
 <br>
-- Pix;
+<span>- Pix;</span>
 <br>
 e as categorias nas quais os gastos devem se enquadrar:
 <br>
-- Alimentação;
+<span>- Alimentação;</span>
 <br>
-- Diversos;
+<span>- Diversos;</span>
 <br>
-- Domésticos;
+<span>- Domésticos;</span>
 <br>
-- Lazer;
+<span>- Lazer;</span>
 <br>
-- Saúde;
+<span>- Saúde;</span>
 <br>
 As rotas criadas têm a função de adicionar novos gastos, além de dar acesso a todos os gastos feitos durante o mês. 
