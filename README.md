@@ -45,7 +45,7 @@ Os testes foram implementados usando mocha com auxílio do chai e sinon.
 
 Assim que o banco de dados e as tabelas são criadas já são determinadas as possíveis formas de pagamentos:
 <br>
-- Crédito;
+-Crédito;
 <br>
 - Débito;
 <br>
