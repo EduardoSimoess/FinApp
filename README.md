@@ -12,14 +12,21 @@ Para clonar o projeto é só colar a seguinte linha de comando no terminal:
 - git clone git@github.com:EduardoSimoess/blogsAPI.git;
 Em seguida é necessário instalar as dependências do projeto localmente:
 - npm i;
+<br>
 Também optei por utilizar o docker no design do projeto, por isso para subir os containers é necessário usar o comando:
 - docker-compose up -d;
+<br>
 Os comando a seguir devem ser inseridos dentro do terminal do container “modelo”, para abri-lo use o comando:
+<br>
 - docker exec -it modelo bash;
+<br>
 Para inicializar a aplicação utilize o comando:
+<br>
 - npm start;
+<br>
 Para utilizar as rotas é necessário o auxílio de alguma extensão como o thunder cliente ou o insomnia.
 Se desejar rodar os testes automatizados basta usar o comando:
+<br>
 - npm test;
 
 <h2>Desenvolvimento</h2>
