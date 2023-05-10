@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 import api from '../services/service';
 
 function NewExpense() {
@@ -9,6 +10,7 @@ function NewExpense() {
   const [descricao, setDescricao] = useState();
   const [statement, setStatement] = useState(true);
   const [correct, setCorrect] = useState(false);
+  const [added, setAdded] = useState(false);
 
   useEffect(() => {
     if (tipo && categoria && descricao && correct) {
@@ -38,16 +40,35 @@ function NewExpense() {
     set(target.value);
   }
 
-  function handleSubmit() {
+  async function handleSubmit() {
+    // console.log(api);
     api.post('/', {
       tipo, categoria, valor, descricao,
     }).then((response) => {
       console.log(response);
+      if (response.status === 201) {
+        setAdded(true);
+        alert('despesa adicionada com sucesso');
+      }
     }).catch((error) => {
-      console.log(error.message, 'error');
+      console.log(error.message, added);
     });
-  }
 
+    // // api.get('/5').then((response) => {
+    // //   console.log(response.data);
+    // //   console.log(response.status);
+    // //   console.log(response.statusText);
+    // //   console.log(response.headers);
+    // //   console.log(response.config);
+    // // });
+    // try {
+    //   const response = await api.get('/5');
+    //   console.log(response.data.data);
+    // } catch (error) {
+    //   console.log(error);
+    // }
+  }
+  if (added) return <Redirect to="/" />;
   return (
     <div>
       <form>
