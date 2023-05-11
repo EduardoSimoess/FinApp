@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import api from '../services/service';
 
 function Month() {
@@ -16,19 +15,51 @@ function Month() {
     console.log(list, 'lista');
   }, []);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   console.log(list, 'lista2');
-  // }, [list]);
+  function fixDate(date) {
+    const partOne = date.split('T');
+    const correct = partOne[0].split('-').reverse().join('/');
+    console.log('chamada');
+    return correct;
+  }
+
   return (
     <div>
       {!list ? (<h1>Carreagando</h1>) : (
         <div>
-          {list.map((expense) => (
-            <h1>{expense.id}</h1>
-          ))}
+          {list.length === 0 ? <p>Não há gastos</p> : (
+            <div>
+              {list.map((expense) => (
+                <div key={expense.id}>
+                  <p>
+                    Compra:
+                    {' '}
+                    {expense.descricao}
+                  </p>
+                  <p>
+                    Valor: R$
+                    {expense.valorCent / 100}
+                  </p>
+                  <p>
+                    Categoria:
+                    {' '}
+                    {expense.categoria}
+                  </p>
+                  <p>
+                    Forma de pagamento:
+                    {' '}
+                    {expense.tipo}
+                  </p>
+                  <p>
+                    Data:
+                    {fixDate(expense.data)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
+      <Link to="/">Pagina Inicial</Link>
     </div>
     // <h1>Teste</h1>
   );

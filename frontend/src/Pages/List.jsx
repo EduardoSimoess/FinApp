@@ -6,7 +6,7 @@ function List() {
   return (
     <div>
       {months.map((month, i) => (
-        <Link to={`/list/${i + 1}`}>{month}</Link>
+        <Link to={`/list/${i + 1}`} key={month}>{month}</Link>
       ))}
     </div>
   );
