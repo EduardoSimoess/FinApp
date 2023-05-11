@@ -1,24 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import api from '../services/service';
+import '../App.css';
 
 function Month() {
   const { month } = useParams();
   const [list, setList] = useState();
-  // const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     api.get(`/${month}`).then((response) => {
       const { data } = response.data;
       setList(data);
     });
-    console.log(list, 'lista');
   }, []);
 
   function fixDate(date) {
     const partOne = date.split('T');
     const correct = partOne[0].split('-').reverse().join('/');
-    console.log('chamada');
     return correct;
   }
 
@@ -29,13 +27,13 @@ function Month() {
           {list.length === 0 ? <p>Não há gastos</p> : (
             <div>
               {list.map((expense) => (
-                <div key={expense.id}>
-                  <p>
+                <div key={expense.id} className="ml-3">
+                  <p className="text-sm font-medium text-gray-900">
                     Compra:
                     {' '}
                     {expense.descricao}
                   </p>
-                  <p>
+                  <p className="text-sm text-gray-500">
                     Valor: R$
                     {expense.valorCent / 100}
                   </p>

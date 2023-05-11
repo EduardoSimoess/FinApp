@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import api from '../services/service';
 
@@ -41,7 +40,6 @@ function NewExpense() {
   }
 
   async function handleSubmit() {
-    // console.log(api);
     api.post('/', {
       tipo, categoria, valor, descricao,
     }).then((response) => {
@@ -51,22 +49,8 @@ function NewExpense() {
         alert('despesa adicionada com sucesso');
       }
     }).catch((error) => {
-      console.log(error.message, added);
+      alert(error.message);
     });
-
-    // // api.get('/5').then((response) => {
-    // //   console.log(response.data);
-    // //   console.log(response.status);
-    // //   console.log(response.statusText);
-    // //   console.log(response.headers);
-    // //   console.log(response.config);
-    // // });
-    // try {
-    //   const response = await api.get('/5');
-    //   console.log(response.data.data);
-    // } catch (error) {
-    //   console.log(error);
-    // }
   }
   if (added) return <Redirect to="/" />;
   return (
