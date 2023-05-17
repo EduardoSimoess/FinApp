@@ -94,7 +94,7 @@ Por fim para iniciar a aplicação utilize:
 
 O front-end foi feito com react. Para tornar possível navegar por diferentes páginas foi utilizado o react router dom e todas as páginas foram feitas por componentes funcionais. 
 
-<h2>Funcionalidades<h2>
+<h2>Funcionalidades</h2>
 
 Na página inicial o usuário pode optar por adicionar um novo gasto ou acessar a lista de gastos registrados.
 
