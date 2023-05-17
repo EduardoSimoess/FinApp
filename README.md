@@ -66,4 +66,39 @@ e as categorias nas quais os gastos devem se enquadrar:
 <br>
 <span>- Saúde;</span>
 <br>
-As rotas criadas têm a função de adicionar novos gastos, além de dar acesso a todos os gastos feitos durante o mês. 
+As rotas criadas têm a função de adicionar novos gastos, além de dar acesso a todos os gastos feitos durante o mês.
+
+<h1>Front-end</h1>
+
+OBS.: A estilização ainda está em desenvolvimento.
+
+Uma vez que o back-end estiver funcionando corretamente, é necessário entrar na pasta front-end usando o comando:
+
+<br>
+<span>- cd front-end;</span>
+<br>
+
+Já dentro da pasta instalamos as dependências com o comando:
+
+<br>
+<span>- npm i;</span>
+<br>
+
+Por fim para iniciar a aplicação utilize:
+
+<br>
+<span>-npm start;</span>
+<br>
+
+<h2>Desenvolvimento</h2>
+
+O front-end foi feito com react. Para tornar possível navegar por diferentes páginas foi utilizado o react router dom e todas as páginas foram feitas por componentes funcionais. 
+
+<h2>Funcionalidades<h2>
+
+Na página inicial o usuário pode optar por adicionar um novo gasto ou acessar a lista de gastos registrados.
+
+Uma vez que a primeira opção é selecionada o usuário é redirecionado para um formulário onde uma vez que todos os campos forem preenchidos corretamente a nova despesa será adicionada e voltamos para a página principal.
+
+Quando a segunda opção é selecionada é dada ao usuário uma lista com os meses do ano, para que ele possa escolher o período dos gastos que ele deseja visualizar.
+
